@@ -11,11 +11,11 @@ namespace ConsoleApp04.Datos
         private Estanteria(int capacidad)
         {
             productos = new Producto[capacidad];
-            ubicacionEstante = -1;
-        }
-        public Estanteria(int capacidad, int ubicacionEstante):this(capacidad)
-        {
             
+        }
+        public Estanteria(int capacidad, int ubicacion):this(capacidad)
+        {
+            ubicacionEstante = -1;
         }
 
         public Producto[]? GetProductos() => productos;
